@@ -1,0 +1,9 @@
+#working code
+count = 0
+while count < 152:
+    data.loc[(count,'Happiness Rank')] = (int(count + 1)) 
+    count += 1
+
+data['Happiness Rank'] = data['Happiness Rank'].astype(int)
+
+data.dropna(axis=0, how='any', inplace=True)
